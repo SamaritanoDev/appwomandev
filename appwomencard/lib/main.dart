@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               //TODO: Add LisTile
+              CardSmall(),
             ],
           ),
         ),
