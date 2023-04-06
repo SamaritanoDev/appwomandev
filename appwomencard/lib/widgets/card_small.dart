@@ -1,4 +1,3 @@
-import 'package:appwomencard/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class CardSmall extends StatelessWidget {
@@ -7,7 +6,11 @@ class CardSmall extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      //TODO: widgets ListTile
+      title: const Text('Hola mudno'),
+      subtitle: const Text('Dev4WomenDay'),
+      trailing: IconButton(
+          onPressed: () => Navigator.pushNamed(context, '/cardImage'),
+          icon: const Icon(Icons.arrow_forward_ios)),
     );
   }
 }

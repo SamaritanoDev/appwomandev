@@ -6,7 +6,6 @@ class BannerImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Stack(
@@ -15,7 +14,9 @@ class BannerImage extends StatelessWidget {
           Card(
             color: ColorsMyApp.primarycolor,
             elevation: 10,
-            //TODO: Add image
+            child: Image(
+              image: AssetImage('assets/images/banner.png'),
+            ),
           ),
           Positioned(top: 3.5, right: 3, child: _ButtonStack()),
         ],
